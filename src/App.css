@@ -1,31 +1,57 @@
-.App {
+.carStyle {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 250px;
   text-align: center;
+  margin: 15px 0 0 5px;;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.buttons {
+  margin-left: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+.AppButton {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.AppButton:focus, .AppButton:active {
+    outline: none;
+}
+
+.AppButton:hover {
+    background: #f0ff1e;
+}
+
+
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+}
+.nav li {
+      margin-right: 15px;
+}
+
+.nav a.active {
+  color: red;
+  font-weight: bold;
+}
+
+
+
+
+
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +61,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
