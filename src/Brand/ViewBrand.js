@@ -13,6 +13,7 @@ export default class ViewBrand extends Component {
     }
     render() {
         console.log(this.props)
+        const data = this.state.brand
         return(
             this.state.brand.map((item, index) => {
                 return(
@@ -21,9 +22,11 @@ export default class ViewBrand extends Component {
                     id={item.id} 
                     key={index} 
                     link={item.brand_logo_url} 
-                    slug={item.slug} />
+                    slug={item.slug}
+                    />
                 )
             })
         )
     }   
 }
+
